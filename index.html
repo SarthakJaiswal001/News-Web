@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know More</title>
+    <link rel="icon" href="KNOW.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-Nav container flex" >
+            <a href="" class="logo">
+                <img src="KNOW.png" alt="Logo-for-website">
+            </a>
+            <div class="news-Topics">
+                <ul class="flex">
+                    <li class="hovering news-types" id="general" onclick="navClicked('general')"><h3>General</h3></li>
+                    <li class="hovering news-types" id="finance" onclick="navClicked('finance')"><h3>Finance</h3></li>
+                    <li class="hovering news-types" id="politics" onclick="navClicked('politics')"><h3>Politics</h3></li>
+                    <li class="hovering news-types" id="sports" onclick="navClicked('sports')"><h3>Sports</h3></li>
+                    <li class="hovering news-types" id="health" onclick="navClicked('health')"><h3>Health</h3></li>
+                </ul>
+            </div>
+            <div class="search-Bar flex">
+                <input type="text" id="news-text"class="news-input" placeholder="    Search any news">
+               <button class="search-Button" id="search-Btn" >Search</button>
+            </div>
+        </div>
+        
+    </nav>
+    <main>
+        <div class="news-container container flex" id="news-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="box">
+            <div class="box-header">
+                <img src="https://via.placeholder.com/400x200" alt="newsimage" id="news-image">
+            </div>
+            <div class="box-content">
+                <h3 id="headline">This is heading</h3>
+                <h6 id="source-of-content">THis is content of the heading</h6>
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </template>
+</body>
+    
+
+<script src="script.js"></script>
+</html>
